@@ -1,0 +1,64 @@
+<...........Part No 01............>
+
+Public class Item{
+protected int location;
+protected string description;
+
+public Item(int location,String description){
+this.location=location;
+this.location=location;
+}
+
+protected int getlocation(){
+return location;
+}
+
+protected void setlocation(int loaction){
+this.location=location;
+}
+
+protected String getdescription(){
+return description;
+}
+
+procected void setdescription(String description){
+this.description=description;
+}
+
+public void monster extends Item{
+public monster(int location,String description)
+super(loction,description)
+}}
+
+
+<................Part No 02.............>
+
+1.b)super
+2.b)private
+3.b)Package
+4.a)import pkg.
+5.c)charAt()
+6.d)length()
+
+
+<.................Part No 03............>
+
+1.attributes and behavior
+2.varible
+3.methos
+4.encapsylation
+5.class
+6.super class,subclass,extends
+7.interface
+8.package
+9.Application Programing Interface
+
+
+
+
+
+
+ 
+
+ 
+
