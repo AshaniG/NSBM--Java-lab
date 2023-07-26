@@ -1,4 +1,4 @@
-...........Question No 01.............
+<...........Question No 01.............>
 
 package com.mycompany.hello;
 
@@ -11,7 +11,7 @@ public class Hello {
 }
 
  
-...........Question No 02..................
+<...........Question No 02..................>
 
 package com.mycompany.nameandprogramme;
 
@@ -24,7 +24,7 @@ public class nameandprogramme {
     }
 }
 
-.............Ouestion No 03..............
+<.............Ouestion No 03..............>
 using for for loop
 
 public class forloopexample {
@@ -50,7 +50,7 @@ public class whileloopexample {
 }
 
 
-.............Question No 04............
+<.............Question No 04............>
 
       int [] numbers = {10, 20, 30, 40, 50};
       for(int x : numbers ){
@@ -62,13 +62,13 @@ public class whileloopexample {
       }
           System.out.print(“I’m  out of the Loop now");
 
-RESULT=10
+RESULT=>10
        20
        I'm out of the Loop now
 
 
 
-...........	Question No 05............
+<..............	Question No 05............>
 
 	public class switchcase {
     public static void main(String[] args) {
@@ -89,37 +89,43 @@ RESULT=10
 	System.out.println("Your grade is " + grade);
 
 
-RESULT=
-	For A...>Excellent!
-	 	  Your	 grade is A
+RESULT====>
+	For A...>
+		Excellent!
+	        Your  grade is A
 
-       For D..>You passed
-       	Better try again
-	 	Your grae is D
+       For D..>
+               You passed
+       	       Better try again
+	       Your grae is D
  
-       For F...>Better try again
-       	 Your grade is F
+       For F...>
+               Better try again
+       	       Your grade is F
  
  removing "break" command at line number 6
 
-	RESULR=
-		For A...>Excellent!
+	RESUL=====>
+		  For A....>
+		  Excellent!
 		  You passed
-		 Better try again
-	      Your grade is A	
+		  Better try again
+	          Your grade is A	
 			
 		
-		For D...>You passed
+		For D....>
+		You passed
 		Better try again
 		You grade is D
 		
-          For B...Better try again
-	     You grade is F
+          For B....>
+		Better try again
+	        You grade is F
 
 Repeat the same scenario by using if-else-if statement instend of switch case.
 
-public class Switchcase {
-    public static void main(String[] args) 
+        public class Switchcase {
+        public static void main(String[] args) 
         char grade = 'A';
         if (grade == 'A') {
             System.out.println("Excellent!");
@@ -131,34 +137,37 @@ public class Switchcase {
             System.out.println("Invalid grade");
         }
         System.out.println("Your grade is " + grade);
-    }
-}
+       }
+       }
 
 		
 
 	 
 
 
-....................Question No 06...........
-
-	class TestEnhanceForLoop {
+<....................Question No 06...........>
+class TestEnhanceForLoop {
 	public static void mains(String args[]){
      	int [] numbers = {10, 20, 30, 40, 50};
-      for(int x : numbers ){
-      System.out.print( x );
+        for(int x : numbers ){
+        System.out.print( x );
      	System.out.print(",")
       		}
 	 System.out.print("\n");
-      	String [] names ={“James”, "Larry", "Tom", "Lacy"}
+      	 String [] names ={“James”, "Larry", "Tom", "Lacy"}
       		for( String name : names ) {
         		 	System.out.print( name );
-         			System.out.print(",");
+         			System.out.print(",");}
+                                }
 
-     	  RESULT=10,20,30,40,50
+     	  RESULT=>10,20,30,40,50
+                 James,Larray,Tom,Lacy	
 
-		    James,Larray,Tom,Lacy	
+
+	
 
 
+	
 
 
 
