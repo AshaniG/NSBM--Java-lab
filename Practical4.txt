@@ -1,0 +1,305 @@
+<................Question No 01..................>
+
+
+package com.mycompany.practical4;
+
+
+public class Employee {
+    private int empid;
+    private String empname;
+    private String empdesignation;
+    
+    
+    
+    //getter method
+    public int getempid(){
+        return empid;
+    }
+    
+    public String getempname(){
+        return empname;
+    }
+    
+    public String getempdesignation(){
+        return empdesignation;
+    }
+    
+    //setter method
+    public void setempid(int empid){
+        this.empid=empid;
+    }
+    public void setempname(String empname){
+        this.empname=empname;
+    }
+    public void setempdesignation(String empdesignation){
+       this.empdesignation=empdesignation; 
+    }
+}
+.....................................................................
+
+
+package com.mycompany.practical4;
+
+
+public class Practical4 {
+
+    public static void main(String[] args) {
+        
+        Employee m1=new Employee();
+        Employee m2=new Employee();
+        
+        m1.setempid(123);
+        m1.setempname("'Mr.Bogdan");
+        m1.setempdesignation("Netwotking Enginner");
+        
+        m2.setempid(124);
+        m2.setempname("Mr.Brid");
+        m2.setempdesignation("Computer scientist");
+        
+        System.out.println("Employee Id"+m1.getempid());
+        System.out.println("Employee Name"+m1.getempname());
+        System.out.println("Employee Dsignation"+m1.getempdesignation());
+        
+        System.out.println("Employee Id"+m2.getempid());
+        System.out.println("Employee Name"+m2.getempname());
+        System.out.println("Employee Dsignation"+m1.getempdesignation());
+        
+        }}
+
+OUTPUT====>
+Employee Id123
+Employee Name'Mr.Bogdan
+Employee DsignationNetwotking Enginner
+Employee Id124
+Employee NameMr.Brid
+Employee DsignationNetwotking Enginner
+
+
+<.............................Question No 02..............>
+
+        
+  OUT PUT====>9
+              6
+
+<........................Question No 03...................>
+
+
+package com.mycompany.practical5;
+
+
+public class person {
+    private String name;
+    private  int id;
+    
+   // getter method
+    
+    public String getname(){
+        return name; 
+    }
+    public int getid(){
+        return id;
+    }
+       //setter method
+    public void setname(String name){
+        this.name=name;
+    }
+    public void setid(int id){
+        this.id=id;
+    }
+    
+}
+..............................................................
+
+package com.mycompany.practical5;
+
+
+public class student  extends person{
+    private String course;
+    
+     
+    //getter and setter method
+    
+    public String getcourse(){
+        return course;
+    }
+    public void setcourse(String course){
+        this.course=course;
+    }
+}
+..............................................................
+
+package com.mycompany.practical5;
+
+
+public class lecture extends person {
+    private String programme;
+    
+    //getter and setter method
+    public String getprogramm(){
+        return programme;
+    }
+    
+    public void setprogramme(String programme){
+        this.programme=programme;
+    }
+    
+    
+}
+.......................................................
+
+
+package com.mycompany.practical5;
+
+
+public class Practical5 {
+
+    public static void main(String[] args) {
+        student s1=new student();
+        s1.setname=("vimukthi bowattage");
+        s1.setid=(111);
+        s1.setcourse("compuer science");
+        
+        lecture l1=new lecture();
+        l1.setname("Ashani gamage");
+        l1.setid=(1111);
+        l1.setprogramme("Data science");
+        
+        System.out.println("Student Name:"+s1.getname());
+        System.out.println("Student Id:"+s1.getid());
+        System.out.println("Student course:"+s1.getcourse());
+        
+        System.out.println("Lecture Name:"+l1.getname());
+        System.out.println("Lecture Id:"+l1.getid());
+        System.out.println("Lecture programme:"+l1.getprogramme());
+        
+    }
+}
+OUTPUT======>Student Name:Vimukthi bowattage
+             Student Id:111
+             Student course:Comuter science
+
+
+             Lecture Name:Ashani Gamage
+             Lecture Id:1111
+             Lecture proramme:Data science
+
+
+<............................Question No 04>................>
+
+
+package com.mycompany.main;
+
+
+public class Animal {
+    private boolean vegetarian;
+    private String eats;
+    private int noofleg;
+    
+     public Animal(boolean veg,String food,int leg){
+         this.vegetarian=veg;
+         this.eats=food;
+         this.noofleg=noofleg;
+     }
+    public boolean isvegetarian(){
+        return vegetarian;
+    }
+    public void setvegetarian(boolean vegetarian){
+        this.vegetarian=vegetarian;
+    }    
+        
+    public  String geteats(){
+        return eats;
+    }
+    public void seteats(String eats){
+        this.eats=eats;
+    }
+    public int getnoofleg(){
+        return noofleg;
+    }
+    public void setnoofleg(int noofleg){
+        this.noofleg=noofleg;
+    }    
+  }
+............................................................   
+ 
+package com.mycompany.main;
+
+
+public class Mammal extends Animal {
+
+    public Mammal(boolean veg, String food, int leg) {
+        super(veg, food, leg);
+    }
+}
+................................................................
+ 
+
+package com.mycompany.main;
+
+
+public class Reptile  extends Animal {
+    
+    public Reptile(boolean veg, String food, int leg) {
+        super(veg, food, leg);
+    }}
+.................................................................
+
+package com.mycompany.main;
+
+
+public class Dog extends Mammal {
+     private String name;
+
+    public Dog(boolean veg, String food, int leg,String name) {
+        super(veg, food, leg);
+        this.name=name;
+    }
+     
+     public  String getname(){
+         return name;
+     }
+     public void setname(String name){
+         this.name=name;
+     }}
+................................................................
+
+
+package com.mycompany.main;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+     Dog c =new Dog(false,"milk",4,"piky");
+        System.out.println("Dog is vegetarian?"+c.isvegetarian());
+        System.out.println("DOg eat:"+c.geteats());
+        System.out.println("Dod number of leg:"+c.getnoofleg());
+        System.out.println("Dog name:"+c.getname());
+        
+}}
+...................................................................
+Animal is the superclass of Mammal class.
+Animal is the superclass of Reptile class.
+Mammal and Reptile are subclasses of Animal class.
+Dog is the subclass of both Mammal and Animal classes.
+
+Mammal IS-A Animal
+Reptile IS-A Animal
+Dog IS-A Mammal
+Hence : Dog IS-A Animal as well
+
+    
+
+
+    
+    
+
+
+    
+    
+
+             
+        
+        
+    
+
