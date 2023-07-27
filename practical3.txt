@@ -1,0 +1,87 @@
+.............................Question No 03................................
+
+package com.mycompany.employee;
+
+
+public class EncapsulationDemo {
+    private String empname;
+private int age;
+private float salary;
+private float bouns;
+
+public EncapsulationDemo(String empname,int age,float salary,float bouns){
+this.empname=empname;
+this.age=age;
+this.salary=salary;
+this.bouns=bouns;
+}
+//Getter and Setter methods
+
+   
+
+public String getempname(){
+return empname;
+}
+public void setempname(String name){
+empname=name;
+}
+
+public int getage(){
+return age;
+}
+public void setage(int age ){
+this.age=age;
+}
+
+public float getsalary(){
+return salary;
+}
+public void setsalary(float salary){
+this.salary=salary;
+}
+public void setbouns(float bouns){
+    this.bouns=bouns;
+}
+public float getbouns(){
+return bouns;
+}
+
+//method to claculate bonus amount
+public float getchecksalary(){
+return (salary+bouns);
+}
+public void display(){
+System.out.println("Name:"+empname);
+    System.out.println("Age:"+age);
+    System.out.println("salary:"+salary);
+    System.out.println("bouns:"+bouns);
+}}
+
+
+...............................................................................
+package com.mycompany.employee;
+
+
+public class Employee {
+
+    public static void main(String[] args) {
+      EncapsulationDemo m1=new EncapsulationDemo("Ashani",25,100000.0f,5000);
+      m1.display();
+      m1.setempname("ASHANI");
+      m1.setage(30);
+      m1.setsalary(5000000.0f);
+      m1.setbouns(100000.0f);
+      m1.getchecksalary();
+        System.out.println("Employee Name:"+m1.getempname());
+        System.out.println("Employee age:"+m1.getage());
+        System.out.println("Basic Salary:"+m1.getsalary());
+        System.out.println("Bouns:"+m1.getbouns());
+        System.out.println("Salary:"+m1.getchecksalary());
+       
+    }}
+      
+       
+     
+    
+
+
